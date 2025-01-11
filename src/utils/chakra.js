@@ -16,8 +16,10 @@ const colors = {
 };
 
 export const chakraTheme = extendTheme({
-  initialColorMode: "dark",
-  useSystemColorMode: false,
+  config: {
+    initialColorMode: "light",
+    useSystemColorMode: false,
+  },
   colors,
   fonts: {
     heading: `'Inter', sans-serif`,
@@ -34,10 +36,7 @@ export const chakraTheme = extendTheme({
   styles: {
     global: (props) => ({
       body: {
-        bg:
-          props.colorMode === "light"
-            ? "rgba(28, 28, 28, 0.1)"
-            : "rgba(255, 255, 255, 0.1)",
+        bg: props.colorMode === "light" ? "white" : "#1C1C1C",
         color:
           props.colorMode === "light"
             ? "text.light.primary"
@@ -49,18 +48,21 @@ export const chakraTheme = extendTheme({
           props.colorMode === "light"
             ? "text.light.primary"
             : "text.dark.primary",
+        lineHeight: "20px",
       },
       span: {
         color:
           props.colorMode === "light"
             ? "text.light.primary"
             : "text.dark.primary",
+        lineHeight: "20px",
       },
       div: {
         color:
           props.colorMode === "light"
             ? "text.light.primary"
             : "text.dark.primary",
+        lineHeight: "20px",
       },
     }),
   },
