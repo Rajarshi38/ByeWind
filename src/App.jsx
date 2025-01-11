@@ -1,7 +1,12 @@
-import Layout from "./components/Layout";
+import Header from "./components/Header/Header";
+import Layout from "./components/Layout/Layout";
 
 const App = () => {
-  return <Layout />;
+  return (
+    <Layout>
+      <Header />
+    </Layout>
+  );
 };
 
 export default App;
