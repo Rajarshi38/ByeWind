@@ -1,11 +1,11 @@
-import { Grid, GridItem, useColorMode } from "@chakra-ui/react";
+import { Grid, GridItem } from "@chakra-ui/react";
 import LeftSidebar from "./LeftSidebar";
-import RightSidebar from "./RightSidebar";
+import RightSidebar from "../RightSidebar";
 
 const Layout = ({ children }) => {
   return (
     <Grid
-      templateColumns={{ base: "1fr", md: "250px 1fr 300px" }}
+      templateColumns={{ base: "1fr", md: "212px 1fr 280px" }}
       templateRows="100vh"
       gap={0}
     >
