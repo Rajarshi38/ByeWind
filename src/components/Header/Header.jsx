@@ -9,6 +9,7 @@ import {
   InputGroup,
   InputLeftElement,
   InputRightElement,
+  Text,
   useColorModeValue,
 } from "@chakra-ui/react";
 import SidebarIcon from "../svg/SidebarIcon";
@@ -38,12 +39,12 @@ const Header = () => {
       {/* left side */}
       <Flex padding="4px" gap="8px" alignItems="center">
         <Box display="flex" justifyContent="center" alignItems="center">
-          <Icon as={SidebarIcon} />
+          <Icon as={SidebarIcon} w="20px" h="20px" />
         </Box>
         <Box display="flex" justifyContent="center" alignItems="center">
-          <Icon as={StarIcon} />
+          <Icon as={StarIcon} w="20px" h="20px" />
         </Box>
-        <Breadcrumb>
+        <Breadcrumb separator={<Text color={secondaryText}>/</Text>}>
           <BreadcrumbItem>
             <BreadcrumbLink href="#" color={secondaryText}>
               Dashboards
@@ -56,32 +57,36 @@ const Header = () => {
         </Breadcrumb>
       </Flex>
       {/* right side */}
-      <Flex gap="8px" alignItems={"center"}>
+      <Flex gap="20px" alignItems={"center"}>
         <InputGroup
-          bg="rgba(28, 28, 28, 0.05)"
+          bg="#F4F4F4"
           border="none"
           borderRadius="8px"
           size="sm"
+          w="160px"
+          _focusVisible={{
+            outline: "none",
+          }}
         >
           <InputLeftElement>
             <Icon as={SearchIcon} w="16px" h="16px" />
           </InputLeftElement>
-          <Input placeholder="Search" border="none" />
+          <Input placeholder="Search" border="none" borderRadius="8px" />
           <InputRightElement>
             <Icon as={InputRightIcon} w="20px" h="20px" />
           </InputRightElement>
         </InputGroup>
         <Flex as="button" justify="center" alignItems="center">
-          <Icon as={Sun} />
+          <Icon as={Sun} w="20px" h="20px" />
         </Flex>
         <Flex as="button" justify="center" alignItems="center">
-          <Icon as={HistoryIcon} />
+          <Icon as={HistoryIcon} w="20px" h="20px" />
         </Flex>
         <Flex as="button" justify="center" alignItems="center">
-          <Icon as={Bell} />
+          <Icon as={Bell} w="20px" h="20px" />
         </Flex>
         <Flex as="button" justify="center" alignItems="center">
-          <Icon as={SidebarIcon} />
+          <Icon as={SidebarIcon} w="20px" h="20px" />
         </Flex>
       </Flex>
     </Flex>

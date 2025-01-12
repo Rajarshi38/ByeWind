@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
   return (
     <Grid
       templateColumns={{ base: "1fr", md: "212px 1fr 280px" }}
-      templateRows="100vh"
+      templateRows="100%"
       gap={0}
     >
       {/* Left Sidebar */}
