@@ -181,3 +181,42 @@ export const contactsData = [
       "https://s3-alpha-sig.figma.com/img/f005/c119/96e0e2c36ac52d5ba8f5f0e7862fe055?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XYqvsRsR-MDZJC6S346KeiK9Dnls2bcHB1mdNA20vr2NSyRapsG-mR9oLiM7Jw0UxN4xzSjyPcb3O05j9b7DdKrqZmEeZPRnjNq8CmSCEMw3~UYTh7tY1QynrsKpIcnUyBB09TgH0Uja5foggpJl6FJ5oJuOwttzP2ieRZJGCwdRBy~2mT2EmToYl7-5kISqmIh4luzTnmY3fNrw1UhW2uqSm1hJoWTkPe9Z8jC5Apdj1ufEULooEY5QhAlIVUbjmO-VEOkV1-gbngU1kSRdw1PHxuboJlcQNvH7qImRXB9j61KNurc6WKSYSDv1Lq2nGuYKOkFCC94zELcvAWfZlw__",
   },
 ];
+
+export const stats = [
+  {
+    id: 1,
+    title: "Customers",
+    value: "3,781",
+    stat: {
+      value: "+11.01%",
+      type: "profit",
+    },
+  },
+  {
+    id: 2,
+    title: "Orders",
+    value: "1,219",
+    stat: {
+      value: "-0.03%",
+      type: "loss",
+    },
+  },
+  {
+    id: 3,
+    title: "Revenue",
+    value: "$695",
+    stat: {
+      value: "+15.03%",
+      type: "profit",
+    },
+  },
+  {
+    id: 4,
+    title: "Growth",
+    value: "30.1%",
+    stat: {
+      value: "+6.08%",
+      type: "profit",
+    },
+  },
+];
